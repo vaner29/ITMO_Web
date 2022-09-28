@@ -2,30 +2,11 @@ body {
     background-color: #eeeeee;
 }
 
-header {
+header, #panel_stats, #panel_logs, #panel_adventures, footer  {
     background-color: #ffffff;
-    box-shadow: 3px 0 7px rgba(0,0,0,.3);
+    box-shadow: 0 0 4px rgb(0 0 0 / 30%);
 }
 
-#panel_stats {
-    background-color: #ffffff;
-    box-shadow: 3px 0 7px rgba(0,0,0,.3);
-}
-
-#panel_logs {
-    background-color: #ffffff;
-    box-shadow: 3px 0 7px rgba(0,0,0,.3);
-}
-
-#panel_adventures {
-    background-color: #ffffff;
-    box-shadow: 3px 0 7px rgba(0,0,0,.3);
-}
-
-footer {
-    background-color: #ffffff;
-    box-shadow: 3px 0 7px rgba(0,0,0,.3);
-}
 
 footer #footer_contacts li a {
     font-size: 13px
