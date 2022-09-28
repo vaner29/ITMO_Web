@@ -1,0 +1,109 @@
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+html {
+    height: 100vh
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    justify-self: flex-start;
+    flex-grow: 1;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-basis: content;
+    justify-content: space-around;
+    flex-grow: 3;
+}
+
+.nav-buttons li {
+    padding: 5px
+}
+
+.login {
+
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel_left {
+    height: inherit;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#panel_logs {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 100px;
+    flex-grow: 1;
+}
+
+#panel_stats {
+    padding: 10px;
+    height: 400px;
+}
+
+.panel_right {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    height: 568px;
+    flex-grow: 3;
+}
+
+#panel_adventures {
+    /* todo: figure out why doesn't inherit work properly */
+    height: 548px;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+footer #footer_contacts {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+footer #footer_contacts a {
+    padding: 5px
+}
+
+

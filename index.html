@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>BreadPG</title>
-    <link rel="stylesheet" href="css/outlines.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 <header>
@@ -27,47 +29,51 @@
     </nav>
 </header>
 <main>
-    <div id="panel_stats" class="panel">
-        Player stats
-        <p id="stats_column1"> <span id="s_hp">Health: </span><br>
-            <span id="s_energy">Energy: </span><br>
-            <span id="s_hunger">Hunger</span><br>
-            <span id="s_xp">XP:</span><br>
-            <span id="s_level">Level:</span><br>
-            <span id="s_gold">Gold:</span>
-        <p id="stats_column2"><span id="s_helmet">Helmet:</span><br>
-            <span id="s_armor">Armor:</span><br>
-            <span id="s_gloves">Gloves:</span><br>
-            <span id="s_boots">Boots:</span><br>
-            <span id="s_amulet">Amulet:</span><br>
-            <span id="s_weapon">Weapon:</span><br>
-            <span id="s_t_armor">Total armor:</span></p>
+    <div class="panel_left">
+        <div id="panel_stats">
+            <h3>Player stats</h3>
+            <p id="stats_column1"> <span id="s_hp">Health: </span><br>
+                <span id="s_energy">Energy: </span><br>
+                <span id="s_hunger">Hunger</span><br>
+                <span id="s_xp">XP:</span><br>
+                <span id="s_level">Level:</span><br>
+                <span id="s_gold">Gold:</span>
+            <p id="stats_column2"><span id="s_helmet">Helmet:</span><br>
+                <span id="s_armor">Armor:</span><br>
+                <span id="s_gloves">Gloves:</span><br>
+                <span id="s_boots">Boots:</span><br>
+                <span id="s_amulet">Amulet:</span><br>
+                <span id="s_weapon">Weapon:</span><br>
+                <span id="s_t_armor">Total armor:</span></p>
+        </div>
+        <p id="panel_logs">
+            somehow here will be logs
+        </p>
     </div>
-    <div id="panel_adventures" class="panel">
-        Adventure Log
-        <div class="row">
-            Rest
+    <div class="panel_right">
+        <div id="panel_adventures">
+            <h3>Adventure</h3>
+            <div class="row">
+                Rest
+            </div>
+            <br>
+            <div class="row">
+                Go somewhere
+            </div>
+            <br>
+            <div class="row">
+                Stuff and things
+            </div>
+            <br>
         </div>
-        <br>
-        <div class="row">
-            Go somewhere
-        </div>
-        <br>
-        <div class="row">
-            Stuff and things
-        </div>
-        <br>
     </div>
-    <p id="logs">
-        somehow here will be logs
-    </p>
 </main>
 <footer>
     <section id="footer_info">
         <h3>About me:</h3>
         <p>
             My formula of success: amount of effort * amount of beer in your backpack<br>
-            "I want to go to SPB for skibidipapa" - Max Polukhin
+            "I want to go to SPB for skibidipapa" - Max Pezin
         </p>
     </section>
     <ul id="footer_contacts">
