@@ -17,7 +17,8 @@ body {
 
 header {
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    height: 50%
 }
 
 .navbar {
@@ -30,6 +31,7 @@ header {
     padding-left: 10px;
     justify-self: flex-start;
     flex-grow: 675;
+    margin: 0
 }
 
 .nav-buttons {
@@ -44,7 +46,7 @@ header {
     padding: 5px
 }
 
-.login {
+#login {
     align-self: flex-start;
     justify-self: flex-end;
 }
@@ -52,6 +54,7 @@ header {
 main {
     display: flex;
     justify-content: space-between;
+    flex: 1 0 auto;
 }
 
 .panel_head {
@@ -106,7 +109,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 footer #footer_contacts {
