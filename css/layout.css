@@ -49,10 +49,10 @@ header {
 #login {
     align-self: flex-start;
     justify-self: flex-end;
+    padding: 5px;
 }
 
 main {
-    padding: 5px;
     display: flex;
     justify-content: space-between;
     flex: 1 0 auto;
