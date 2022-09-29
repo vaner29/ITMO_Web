@@ -14,9 +14,10 @@
   ____                     _ _____   _____
  |  _ \                   | |  __ \ / ____|
  | |_) |_ __ ___  __ _  __| | |__) | |  __
- |  _ <| '__/ _ \/ _` |/ _` |  ___/| | |_ |  - Bread Playing Game
+ |  _ <| '__/ _ \/ _` |/ _` |  ___/| | |_ |
  | |_) | | |  __/ (_| | (_| | |    | |__| |
  |____/|_|  \___|\__,_|\__,_|_|     \_____|
+            Bread Playing Game
         </pre>
         <ul class="nav-buttons">
             <li class="nav-item"> <a href="#"> Inventory </a> </li>
@@ -29,42 +30,51 @@
     </nav>
 </header>
 <main>
-    <div class="panel_left">
+    <div class="panel" id="panel_left">
         <div id="panel_stats">
-            <h3>Player stats</h3>
-            <p id="stats_column1"> <span id="s_hp">Health: </span><br>
-                <span id="s_energy">Energy: </span><br>
-                <span id="s_hunger">Hunger</span><br>
-                <span id="s_xp">XP:</span><br>
-                <span id="s_level">Level:</span><br>
-                <span id="s_gold">Gold:</span>
-            <p id="stats_column2"><span id="s_helmet">Helmet:</span><br>
-                <span id="s_armor">Armor:</span><br>
-                <span id="s_gloves">Gloves:</span><br>
-                <span id="s_boots">Boots:</span><br>
-                <span id="s_amulet">Amulet:</span><br>
-                <span id="s_weapon">Weapon:</span><br>
-                <span id="s_t_armor">Total armor:</span></p>
+            <div class="panel_head">Player Stats</div>
+            <div class="panel_content">
+                <p id="stats_column1"> <span id="s_hp">Health: </span><br>
+                    <span id="s_energy">Energy: </span><br>
+                    <span id="s_hunger">Hunger</span><br>
+                    <span id="s_xp">XP:</span><br>
+                    <span id="s_level">Level:</span><br>
+                    <span id="s_gold">Gold:</span>
+                <p id="stats_column2"><span id="s_helmet">Helmet:</span><br>
+                    <span id="s_armor">Armor:</span><br>
+                    <span id="s_gloves">Gloves:</span><br>
+                    <span id="s_boots">Boots:</span><br>
+                    <span id="s_amulet">Amulet:</span><br>
+                    <span id="s_weapon">Weapon:</span><br>
+                    <span id="s_t_armor">Total armor:</span></p>
+            </div>
         </div>
-        <p id="panel_logs">
-            somehow here will be logs
-        </p>
+        <div id="panel_logs">
+            <div class="panel_head">Logs</div>
+            <div class="panel_content">
+                <p>
+                    somehow here will be logs
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="panel_right">
+    <div class="panel" id="panel_right">
         <div id="panel_adventures">
-            <h3>Adventure</h3>
-            <div class="row">
-                Rest
+            <div class="panel_head" id="panel_head_adventures">Adventures</div>
+            <div class="panel_content">
+                <div class="row">
+                    Rest
+                </div>
+                <br>
+                <div class="row">
+                    Go somewhere
+                </div>
+                <br>
+                <div class="row">
+                    Stuff and things
+                </div>
+                <br>
             </div>
-            <br>
-            <div class="row">
-                Go somewhere
-            </div>
-            <br>
-            <div class="row">
-                Stuff and things
-            </div>
-            <br>
         </div>
     </div>
 </main>
@@ -77,11 +87,11 @@
         </p>
     </section>
     <ul id="footer_contacts">
-        <li><a href="https://github.com/vaner29">github</a></li>
-        <li><a href="mailto:gleb.mihailichencko@gmail.com">email</a></li>
-        <li><a href="https://vk.com/shleble">VK</a></li>
-        <li><a href="#">creative commons license</a></li>
-        <li><a href="#">privacy policy</a></li>
+        <li><a href="https://github.com/vaner29">github</a> | </li>
+        <li><a href="mailto:gleb.mihailichencko@gmail.com">email</a> | </li>
+        <li><a href="https://vk.com/shleble">VK</a> | </li>
+        <li><a href="#">creative commons license</a> | </li>
+        <li><a href="#">privacy policy</a> | </li>
     </ul>
 </footer>
 </body>

@@ -1,13 +1,38 @@
 body {
-    background-color: #eeeeee;
+    background-color: #f6ece2;
+    font-family: "Montserrat", "Arial", sans-serif;
 }
 
-header, #panel_stats, #panel_logs, #panel_adventures, footer  {
-    background-color: #ffffff;
+#panel_stats, #panel_logs, #panel_adventures {
+    background-color: #fcf9f6;
     box-shadow: 0 0 4px rgb(0 0 0 / 30%);
 }
 
+header {
+    background-color: #e4c6a8;
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 30%);
+}
+
+.logo {
+    font-size: 12px;
+}
+
+header li a {
+    color: #212121;
+    font-size: 20px;
+}
+
+.panel_head {
+    background-color: #e4c6a8;
+    height: 20px
+}
+
+
+footer {
+    box-shadow: 0 -5px 4px -4px rgb(0 0 0 / 30%);
+}
 
 footer #footer_contacts li a {
-    font-size: 13px
+    font-size: 13px;
+    color: #666
 }

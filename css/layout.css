@@ -27,23 +27,24 @@ header {
 }
 
 .logo {
+    padding-left: 10px;
     justify-self: flex-start;
-    flex-grow: 1;
+    flex-grow: 675;
 }
 
 .nav-buttons {
     display: flex;
     flex-basis: content;
-    justify-content: space-around;
-    flex-grow: 3;
+    justify-content: space-between;
+    flex-grow: 1150;
 }
 
 .nav-buttons li {
+    margin: 5px;
     padding: 5px
 }
 
 .login {
-
     align-self: flex-start;
     justify-self: flex-end;
 }
@@ -53,16 +54,22 @@ main {
     justify-content: space-between;
 }
 
-.panel_left {
+.panel_head {
+    display: flex;
+    justify-content: center;
+    margin: -10px;
+}
+
+#panel_left {
     height: inherit;
     margin-left: 20px;
     margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
 }
 
 #panel_logs {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     margin-bottom: 0;
     padding: 10px;
@@ -71,11 +78,13 @@ main {
 }
 
 #panel_stats {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     height: 400px;
 }
 
-.panel_right {
+#panel_right {
     margin-left: 50px;
     margin-right: 20px;
     margin-bottom: 50px;
@@ -84,12 +93,16 @@ main {
 }
 
 #panel_adventures {
-    /* todo: figure out why doesn't inherit work properly */
-    height: 548px;
+    height: inherit;
     padding: 10px;
 }
 
+#panel_head_adventures {
+    margin-bottom: 6px;
+}
+
 footer {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
