@@ -18,7 +18,7 @@ body {
 header {
     padding: 10px;
     margin-bottom: 20px;
-    height: 50%
+    height: auto;
 }
 
 .navbar {
@@ -53,9 +53,9 @@ header {
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
-    flex: 1 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
+    gap: 20px;
 }
 
 .panel_head {
