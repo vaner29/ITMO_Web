@@ -1,0 +1,52 @@
+body {
+    background-color: #f6ece2;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+#panel_stats, #panel_logs, #panel_adventures {
+    background-color: #fcf9f6;
+    box-shadow: 0 0 4px rgb(0 0 0 / 30%);
+}
+
+header {
+    font-weight: bold;
+    background-color: #e4c6a8;
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 30%);
+}
+
+.logo {
+    font-size: 12px;
+}
+
+#login {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+header a {
+    color: #212121;
+}
+
+header li a {
+    font-size: 20px;
+}
+
+.panel {
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.panel_head {
+    background-color: #e4c6a8;
+    font-weight: bold;
+}
+
+
+footer {
+    box-shadow: 0 -5px 4px -4px rgb(0 0 0 / 30%);
+}
+
+footer #footer_contacts li a {
+    font-size: 13px;
+    color: #666
+}

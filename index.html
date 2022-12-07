@@ -1,8 +1,105 @@
-<html>
-  <head>
-  <title>пэйджер))</title>
-  </head>
-  <body>
-    <h1>Классные странички красивый html</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BreadPG</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <pre class="logo">
+  ____                     _ _____   _____
+ |  _ \                   | |  __ \ / ____|
+ | |_) |_ __ ___  __ _  __| | |__) | |  __
+ |  _ <| '__/ _ \/ _` |/ _` |  ___/| | |_ |
+ | |_) | | |  __/ (_| | (_| | |    | |__| |
+ |____/|_|  \___|\__,_|\__,_|_|     \_____|
+            Bread Playing Game
+        </pre>
+        <ul class="nav-buttons">
+            <li class="nav-item"> <a href="#"> Inventory </a> </li>
+            <li class="nav-item"> <a href="#"> Crafting </a> </li>
+            <li class="nav-item"> <a href="#"> Journal </a> </li>
+        </ul>
+        <div id ="login">
+            <a href="#"> Sign in </a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="panel" id="panel_left">
+        <div id="panel_stats">
+            <div class="panel_head">Player Stats</div>
+            <div class="panel_content">
+                <p id="stats_column1">
+                    <img class="stats_img" src="img/Health.png" alt="♥">
+                    <span id="s_hp">Health: </span><br>
+                    <img class="stats_img" src="img/Energy.png" alt="🗲">
+                    <span id="s_energy">Energy: </span><br>
+                    <img class="stats_img" src="img/Hunger.png" alt="🍔">
+                    <span id="s_hunger">Hunger</span><br>
+                    <img class="stats_img" src="img/XP.png" alt="🧠">
+                    <span id="s_xp">XP:</span><br>
+                    <img class="stats_img" src="img/LVL.png" alt="🎩">
+                    <span id="s_level">Level:</span><br>
+                    <img class="stats_img" src="img/Bread.png" alt="🥖">
+                    <span id="s_gold">Bread:</span>
+                <p id="stats_column2"><span id="s_helmet">Helmet:</span><br>
+                    <span id="s_armor">Armor:</span><br>
+                    <span id="s_gloves">Gloves:</span><br>
+                    <span id="s_boots">Boots:</span><br>
+                    <span id="s_amulet">Amulet:</span><br>
+                    <span id="s_weapon">Weapon:</span><br>
+                    <span id="s_t_armor">Total armor:</span></p>
+            </div>
+        </div>
+        <div id="panel_logs">
+            <div class="panel_head">Logs</div>
+            <div class="panel_content">
+                <p>
+                    somehow here will be logs
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="panel" id="panel_right">
+        <div id="panel_adventures">
+            <div class="panel_head" id="panel_head_adventures">Adventures</div>
+            <div class="panel_content">
+                <div class="row">
+                    Rest
+                </div>
+                <br>
+                <div class="row">
+                    Go somewhere
+                </div>
+                <br>
+                <div class="row">
+                    Stuff and things
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <section id="footer_info">
+        <h3>About me:</h3>
+        <p>
+            My formula of success: amount of effort * amount of beer in your backpack<br>
+            "I want to go to SPB for skibidipapa" - Max Pezin
+        </p>
+    </section>
+    <ul id="footer_contacts">
+        <li><a href="https://github.com/vaner29">github</a> | </li>
+        <li><a href="mailto:gleb.mihailichencko@gmail.com">email</a> | </li>
+        <li><a href="https://vk.com/shleble">VK</a> | </li>
+        <li><a href="#">creative commons license</a> | </li>
+        <li><a href="#">privacy policy</a></li>
+    </ul>
+</footer>
+</body>
 </html>
