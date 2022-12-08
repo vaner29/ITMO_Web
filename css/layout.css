@@ -68,6 +68,7 @@ main {
 #panel_left {
     height: inherit;
     margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 50px;
     flex-grow: 1;
 }
@@ -90,7 +91,7 @@ main {
 }
 
 #panel_right {
-    margin-left: 50px;
+    margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
     height: 568px;
@@ -112,6 +113,18 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     flex-shrink: 0;
+}
+
+
+footer .ad_banner {
+    text-align: center;
+    border: 4px dotted black;
+}
+
+@media screen and (max-width: 900px) {
+    footer .ad_banner {
+        display: none;
+    }
 }
 
 footer #footer_contacts {
