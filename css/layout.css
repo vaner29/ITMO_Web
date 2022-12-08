@@ -121,7 +121,7 @@ footer .ad_banner {
     border: 4px dotted black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     footer .ad_banner {
         display: none;
     }
