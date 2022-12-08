@@ -41,6 +41,9 @@ header li a {
     font-weight: bold;
 }
 
+.panel_right_content tr:nth-child(odd){
+    background: #F6ECE2;
+}
 
 footer {
     box-shadow: 0 -5px 4px -4px rgb(0 0 0 / 30%);
