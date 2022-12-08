@@ -46,7 +46,7 @@ header {
     padding: 5px
 }
 
-#login {
+.login {
     align-self: flex-start;
     justify-self: flex-end;
     padding: 5px;
@@ -65,7 +65,7 @@ main {
     margin: -10px;
 }
 
-#panel_left {
+.panel_left {
     height: inherit;
     margin-left: 20px;
     margin-right: 20px;
@@ -73,7 +73,7 @@ main {
     flex-grow: 1;
 }
 
-#panel_logs {
+.panel_logs {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -83,26 +83,26 @@ main {
     flex-grow: 1;
 }
 
-#panel_stats {
+.panel_stats {
     display: flex;
     flex-direction: column;
     padding: 10px;
     height: 400px;
 }
 
-#panel_right {
+.panel_right {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
     flex-grow: 3;
 }
 
-#panel_adventures {
+.panel_adventures {
     height: inherit;
     padding: 10px;
 }
 
-#panel_head_adventures {
+.panel_adventures .panel_head {
     margin-bottom: 6px;
 }
 
@@ -138,13 +138,13 @@ footer .ad_banner {
     }
 }
 
-footer #footer_contacts {
+footer .footer_contacts {
     display: flex;
     justify-content: flex-start;
 }
 
 
-footer #footer_contacts a {
+footer .footer_contacts a {
     padding: 5px
 }
 
