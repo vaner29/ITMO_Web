@@ -41,6 +41,23 @@ header li a {
     font-weight: bold;
 }
 
+.panel_logs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 100px;
+    flex-grow: 1;
+}
+
+.panel_stats {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 400px;
+}
+
 .panel_right_content tr:nth-child(odd){
     background: #F6ECE2;
 }
