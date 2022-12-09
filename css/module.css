@@ -7,9 +7,13 @@
 
 .logo {
     padding-left: 10px;
+    padding-right: 10px;
     justify-self: flex-start;
-    flex-grow: 675;
     margin: 0
+}
+
+.space-plug {
+    flex-grow: 375;
 }
 
 .nav-buttons li {
@@ -51,16 +55,18 @@
     padding: 8px;
 }
 
-footer .ad_banner {
-    text-align: center;
-    border: 4px dotted black;
-}
-
 @media screen and (max-width: 1000px) {
     footer .ad_banner {
         display: none;
     }
 }
+
+.ad-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .footer_contacts {
     display: flex;
