@@ -22,9 +22,15 @@
             Bread Playing Game
         </pre>
         <ul class="nav-buttons">
-            <li class="nav-item"><a href="#"> Inventory </a></li>
-            <li class="nav-item"><a href="#"> Crafting </a></li>
-            <li class="nav-item"><a href="#"> Journal </a></li>
+            <li class="nav-item">
+                <div class="inventory-button" onclick="make_modal_visible('modal-inventory')"> <a href="#"> Inventory </a> </div>
+            </li>
+            <li class="nav-item">
+                <div class="crafting-button" onclick="make_modal_visible('modal-crafting')"> <a href="#"> Crafting </a> </div>
+            </li>
+            <li class="nav-item">
+                <div class="journal-button" onclick="make_modal_visible('modal-journal')"> <a href="#"> Journal </a> </div>
+            </li>
         </ul>
         <div class="login">
             <a href="#"> Sign in </a>
@@ -110,5 +116,21 @@
         <li><a href="#">privacy policy</a></li>
     </ul>
 </footer>
+<div class="modal" id="modal-inventory">
+    <div class="modal-content">
+        <p>Inventory</p>
+    </div>
+</div>
+<div class="modal" id="modal-crafting">
+    <div class="modal-content">
+        <p>Crafting</p>
+    </div>
+</div>
+<div class="modal" id="modal-journal">
+    <div class="modal-content">
+        <p>Journal</p>
+    </div>
+</div>
 </body>
+<script src="js/modals.js"></script>
 </html>
