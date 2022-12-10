@@ -1,55 +1,13 @@
-ul {
-    list-style: none; /*убираем маркеры списка*/
-    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
-    padding-left: 0; /*убираем левый отступ, равный 40px*/
-}
-
-html {
-    height: 100vh
-}
-
-body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
 header {
     padding: 10px;
     margin-bottom: 20px;
     height: auto;
 }
 
-.navbar {
+.layout-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    padding-left: 10px;
-    justify-self: flex-start;
-    flex-grow: 675;
-    margin: 0
-}
-
-.nav-buttons {
-    display: flex;
-    flex-basis: content;
-    justify-content: space-between;
-    flex-grow: 1150;
-}
-
-.nav-buttons li {
-    margin: 5px;
-    padding: 5px
-}
-
-#login {
-    align-self: flex-start;
-    justify-self: flex-end;
-    padding: 5px;
 }
 
 main {
@@ -58,52 +16,19 @@ main {
     gap: 20px;
 }
 
-.panel_head {
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    margin: -10px;
-}
-
-#panel_left {
+.layout-panel_left {
     height: inherit;
     margin-left: 20px;
-    margin-bottom: 50px;
-    flex-grow: 1;
-}
-
-#panel_logs {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding: 10px;
-    height: 100px;
-    flex-grow: 1;
-}
-
-#panel_stats {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    height: 400px;
-}
-
-#panel_right {
-    margin-left: 50px;
     margin-right: 20px;
     margin-bottom: 50px;
-    height: 568px;
+    flex-grow: 1;
+}
+
+.layout-panel_right {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
     flex-grow: 3;
-}
-
-#panel_adventures {
-    height: inherit;
-    padding: 10px;
-}
-
-#panel_head_adventures {
-    margin-bottom: 6px;
 }
 
 footer {
@@ -113,15 +38,3 @@ footer {
     justify-content: flex-start;
     flex-shrink: 0;
 }
-
-footer #footer_contacts {
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-footer #footer_contacts a {
-    padding: 5px
-}
-
-

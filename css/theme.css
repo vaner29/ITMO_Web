@@ -3,7 +3,7 @@ body {
     font-family: "Montserrat", "Arial", sans-serif;
 }
 
-#panel_stats, #panel_logs, #panel_adventures {
+.panel_stats, .panel_logs, .panel_adventures {
     background-color: #fcf9f6;
     box-shadow: 0 0 4px rgb(0 0 0 / 30%);
 }
@@ -18,7 +18,7 @@ header {
     font-size: 12px;
 }
 
-#login {
+.login {
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -41,12 +41,32 @@ header li a {
     font-weight: bold;
 }
 
+.panel_logs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    height: 100px;
+    flex-grow: 1;
+}
+
+.panel_stats {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 400px;
+}
+
+.panel_right_content tr:nth-child(odd){
+    background: #F6ECE2;
+}
 
 footer {
     box-shadow: 0 -5px 4px -4px rgb(0 0 0 / 30%);
 }
 
-footer #footer_contacts li a {
+footer .footer_contacts li a {
     font-size: 13px;
     color: #666
 }
