@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>BreadPG</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/base.css">
@@ -131,7 +132,15 @@
 </footer>
 <div class="modal" id="modal-inventory">
     <div class="modal-content">
-        <p>Inventory</p>
+        <div class="container">
+            <h1>Inventory</h1>
+            <form class="todo-form">
+                <input type="text" class="todo-input" placeholder="Add a Todo...">
+                <button type="submit" class="add-button">Add</button>
+            </form>
+            <ul class="todo-items">
+            </ul>
+        </div>
     </div>
 </div>
 <div class="modal" id="modal-crafting">
@@ -147,4 +156,5 @@
 </body>
 <script src="js/modals.js"></script>
 <script src="js/loadtime.js"></script>
+<script src="js/inventory_list.js"></script>
 </html>
