@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/state.css">
 
 </head>
 <body>
 <header>
     <nav class="layout-navbar">
-        <pre class="logo">
+        <a href="./" style="text-decoration:none">
+        <pre class="logo is-page-active">
   ____                     _ _____   _____
  |  _ \                   | |  __ \ / ____|
  | |_) |_ __ ___  __ _  __| | |__) | |  __
@@ -21,10 +23,22 @@
  |____/|_|  \___|\__,_|\__,_|_|     \_____|
             Bread Playing Game
         </pre>
+        </a>
+        <div class="space-plug">
+        </div>
         <ul class="nav-buttons">
-            <li class="nav-item"><a href="#"> Inventory </a></li>
-            <li class="nav-item"><a href="#"> Crafting </a></li>
-            <li class="nav-item"><a href="#"> Journal </a></li>
+            <li class="nav-item">
+                <div class="inventory-button" onclick="make_modal_visible('modal-inventory')"><a href="#">
+                    Inventory </a></div>
+            </li>
+            <li class="nav-item">
+                <div class="crafting-button" onclick="make_modal_visible('modal-crafting')"><a href="#"> Crafting </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="journal-button" onclick="make_modal_visible('modal-journal')"><a href="#"> Journal </a>
+                </div>
+            </li>
         </ul>
         <div class="login">
             <a href="#"> Sign in </a>
@@ -93,7 +107,7 @@
 </main>
 <footer>
     <div class="ad_banner">
-        <h3>Your Ad Could Be Here</h3>
+        <h3><a href="html/ad.html"> Your Ad Could Be Here </a></h3>
     </div>
     <section class="footer_info">
         <h3>About me:</h3>
@@ -109,6 +123,28 @@
         <li><a href="#">creative commons license</a> |</li>
         <li><a href="#">privacy policy</a></li>
     </ul>
+    <p>
+        Page Load Time:
+        <span class="load-time"></span>
+        s
+    </p>
 </footer>
+<div class="modal" id="modal-inventory">
+    <div class="modal-content">
+        <p>Inventory</p>
+    </div>
+</div>
+<div class="modal" id="modal-crafting">
+    <div class="modal-content">
+        <p>Crafting</p>
+    </div>
+</div>
+<div class="modal" id="modal-journal">
+    <div class="modal-content">
+        <p>Journal</p>
+    </div>
+</div>
 </body>
+<script src="js/modals.js"></script>
+<script src="js/loadtime.js"></script>
 </html>

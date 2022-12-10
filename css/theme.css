@@ -66,6 +66,14 @@ footer {
     box-shadow: 0 -5px 4px -4px rgb(0 0 0 / 30%);
 }
 
+footer h3 a {
+    color: #212121;
+}
+
+footer .ad_banner {
+    text-align: center;
+}
+
 footer .footer_contacts li a {
     font-size: 13px;
     color: #666
