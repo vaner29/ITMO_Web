@@ -1,5 +1,5 @@
-const todoForm = document.querySelector('.todo-form');
-const todoInput = document.querySelector('.todo-input');
+const todoForm = document.querySelector('.inventory-form');
+const todoInput = document.querySelector('.inventory-input');
 const todoItemsList = document.querySelector('.todo-items');
 // array which stores every todos
 let todos = [];
