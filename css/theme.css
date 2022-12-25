@@ -1,3 +1,8 @@
+button:hover {
+    cursor: pointer;
+    background-color: #a8c6e4;
+}
+
 body {
     background-color: #f6ece2;
     font-family: "Montserrat", "Arial", sans-serif;
@@ -77,4 +82,32 @@ footer .ad_banner {
 footer .footer_contacts li a {
     font-size: 13px;
     color: #666
+}
+
+.add-button {
+    background-color: #e4c6a8;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.item {
+    background-color: #fff;
+    font-size: 1.1rem;
+}
+
+.delete-button {
+    background-color: #dc143c;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.jBox-Modal .jBox-content {
+    background-color: #f6ece2;
+    border-radius: 5px;
 }
