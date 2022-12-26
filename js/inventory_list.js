@@ -14,6 +14,7 @@ function addItem(item) {
             name: item,
         };
         items.push(newItem);
+        addToLocalStorage(items);
         renderItems(items);
         itemInput.value = '';
     }
