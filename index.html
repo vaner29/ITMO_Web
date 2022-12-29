@@ -3,18 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>BreadPG</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/module.css">
     <link rel="stylesheet" href="css/state.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+    <script src="js/loadtime.js"></script>
 </head>
 <body>
 <header>
     <nav class="layout-navbar">
         <a href="./" style="text-decoration:none">
-        <pre class="logo is-page-active">
+        <pre class="logo is-page-active tooltip" title="Main Page">
   ____                     _ _____   _____
  |  _ \                   | |  __ \ / ____|
  | |_) |_ __ ___  __ _  __| | |__) | |  __
@@ -27,17 +31,14 @@
         <div class="space-plug">
         </div>
         <ul class="nav-buttons">
-            <li class="nav-item">
-                <div class="inventory-button" onclick="make_modal_visible('modal-inventory')"><a href="#">
-                    Inventory </a></div>
+            <li class="nav-item tooltip" title="Add custom items to your inventory">
+                <div id="inventory-button"><a href="#"> Inventory </a></div>
             </li>
-            <li class="nav-item">
-                <div class="crafting-button" onclick="make_modal_visible('modal-crafting')"><a href="#"> Crafting </a>
-                </div>
+            <li class="nav-item tooltip" title="Work In Progress">
+                <div id="crafting-button"><a href="#"> Crafting </a></div>
             </li>
-            <li class="nav-item">
-                <div class="journal-button" onclick="make_modal_visible('modal-journal')"><a href="#"> Journal </a>
-                </div>
+            <li class="nav-item tooltip" title="Work In Progress">
+                <div id="journal-button"><a href="#"> Journal </a></div>
             </li>
         </ul>
         <div class="login">
@@ -52,7 +53,7 @@
                 <div class="panel_head">Player Stats</div>
                 <div class="panel_content">
                     <p class="stats_column_1">
-                        <img class="stats_img" src="img/Health.png" alt="♥">
+                        <img class="stats_img tooltip" title="ey guys, did you know that in terms of male human and female Pokémon breeding, Vaporeon is the most compatible Pokémon for humans? Not only are they in the field egg group, which is mostly comprised of mammals, Vaporeon are an average of 3”03’ tall and 63.9 pounds, this means they’re large enough to be able handle human dicks, and with their impressive Base Stats for HP and access to Acid Armor, you can be rough with one. Due to their mostly water based biology, there’s no doubt in my mind that an aroused Vaporeon would be incredibly wet, so wet that you could easily have sex with one for hours without getting sore. They can also learn the moves Attract, Baby-Doll Eyes, Captivate, Charm, and Tail Whip, along with not having fur to hide nipples, so it’d be incredibly easy for one to get you in the mood. With their abilities Water Absorb and Hydration, they can easily recover from fatigue with enough water. No other Pokémon comes close to this level of compatibility." src="img/Health.png" alt="♥">
                         <span class="s_hp">Health: </span><br>
                         <img class="stats_img" src="img/Energy.png" alt="🗲">
                         <span class="s_energy">Energy: </span><br>
@@ -107,7 +108,7 @@
 </main>
 <footer>
     <div class="ad_banner">
-        <h3><a href="html/ad.html"> Your Ad Could Be Here </a></h3>
+        <h3><a class="tooltip" title="No it couldn't" href="html/ad.html"> Your Ad Could Be Here </a></h3>
     </div>
     <section class="footer_info">
         <h3>About me:</h3>
@@ -131,7 +132,15 @@
 </footer>
 <div class="modal" id="modal-inventory">
     <div class="modal-content">
-        <p>Inventory</p>
+        <div class="container">
+            <h1>Inventory</h1>
+            <form class="inventory-form">
+                <input type="text" class="inventory-input" placeholder="Add an item to your inventory...">
+                <button type="submit" class="add-button">Add</button>
+            </form>
+            <ul class="custom-items">
+            </ul>
+        </div>
     </div>
 </div>
 <div class="modal" id="modal-crafting">
@@ -145,6 +154,7 @@
     </div>
 </div>
 </body>
-<script src="js/modals.js"></script>
-<script src="js/loadtime.js"></script>
+
+<script src="js/inventory_list.js"></script>
+<script type="module" src="js/jbox.js"></script>
 </html>
